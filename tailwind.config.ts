@@ -9,6 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -19,11 +30,11 @@ const config: Config = {
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
-		  hover: "hsl(var(--popover-hover))",
+          hover: "hsl(var(--popover-hover))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
-		  hover: "hsl(var(--primary-hover))",
+          hover: "hsl(var(--primary-hover))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
