@@ -16,7 +16,7 @@ export function Lamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        className="mt-40 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
         Plans That <br /> Fit You Best
       </motion.h1>
@@ -35,7 +35,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen  flex-col items-center justify-center md:overflow-hidden mt-24  md:mt-0 bg-neutral-950 w-full rounded-md z-0",
+        "relative flex min-h-screen  flex-col items-center justify-center  mt-24  md:mt-0 bg-neutral-950 w-full rounded-md z-0",
         className
       )}
     >
@@ -99,7 +99,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-neutral-950 "></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 mt-44 md:mt-0 flex -translate-y-80 flex-col items-center px-5">
         {children}
       </div>
     </div>
