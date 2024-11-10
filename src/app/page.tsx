@@ -1,6 +1,5 @@
 import Navbar from "@/components/global/navbar";
 import { BackgroundBeams } from "@/components/background-beams";
-import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { clients, plans, products } from "@/lib/constants";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { FlipWords } from "@/components/ui/flip-words";
@@ -14,7 +13,7 @@ export default function Home() {
   return (
     <>
       <main className="flex items-center justify-center flex-col overflow-hidden">
-        <Navbar />
+        {/* <Navbar /> */}
         <BackgroundBeams className="h-screen"></BackgroundBeams>
         <ContainerScroll
           titleComponent={
