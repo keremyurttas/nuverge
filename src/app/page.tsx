@@ -1,4 +1,3 @@
-import Navbar from "@/components/global/navbar";
 import { BackgroundBeams } from "@/components/background-beams";
 import { clients, plans, products } from "@/lib/constants";
 import { HeroParallax } from "@/components/ui/hero-parallax";
@@ -9,11 +8,12 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Navbar from "@/components/global/navbar";
 export default function Home() {
   return (
     <>
-      <main className="flex items-center justify-center flex-col overflow-hidden">
-        {/* <Navbar /> */}
+      <main className="flex items-center justify-center flex-col overflow-hidden custom-container mx-auto">
+        <Navbar />
         <BackgroundBeams className="h-screen"></BackgroundBeams>
         <ContainerScroll
           titleComponent={

@@ -54,7 +54,7 @@ export default function Sidebar() {
       {/* Sidebar Navigation */}
       <nav
         className={clsx(
-          "fixed left-0 top-0 w-20 z-50 bg-white dark:bg-black h-screen flex flex-col justify-between py-6 px-4 overflow-scroll md:overflow-visible shadow-lg transform transition-transform",
+          " relative left-0 top-0 w-20 z-50 bg-white dark:bg-black h-screen flex flex-col justify-between py-6 px-4 overflow-scroll md:overflow-visible shadow-lg transform transition-transform",
           {
             "translate-x-0": isOpen,
             "-translate-x-full": !isOpen, // Hide sidebar on mobile when closed

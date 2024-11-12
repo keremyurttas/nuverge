@@ -74,6 +74,31 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+  .custom-container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .custom-container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .custom-container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .custom-container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .custom-container {
+      max-width: 1280px;
+    }
+  }
+
 @layer base {
   * {
     @apply border-border;
