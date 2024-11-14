@@ -58,12 +58,10 @@ export const HoverEffect = ({
             </CardDescription> */}
             <CardFeatures>
               {item.features.map((feature, idx) => (
-                <>
-                  <li className="flex gap-2 mb-2" key={idx}>
-                    <CheckIcon size={16} />
-                    {feature}
-                  </li>
-                </>
+                <li className="flex gap-2 mb-2" key={idx}>
+                  <CheckIcon size={16} />
+                  {feature}
+                </li>
               ))}
             </CardFeatures>
             <CardBottom />
