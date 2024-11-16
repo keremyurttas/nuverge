@@ -1,13 +1,11 @@
 import { BackgroundBeams } from "@/components/background-beams";
-import { clients, plans, products } from "@/lib/constants";
+import { clients, products } from "@/lib/constants";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { FlipWords } from "@/components/ui/flip-words";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Lamp } from "@/components/ui/lamp";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Navbar from "@/components/global/navbar";
 export default function Home() {
   return (
@@ -33,9 +31,7 @@ export default function Home() {
               </h1>
             </div>
           }
-        >
-          
-        </ContainerScroll>
+        ></ContainerScroll>
         <InfiniteMovingCards
           className=" mt-[-100px] md:mt-0 mb-8 "
           items={clients}
