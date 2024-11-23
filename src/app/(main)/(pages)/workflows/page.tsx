@@ -1,3 +1,4 @@
+import Workflows from "./_components";
 import WorkflowButton from "./_components/workflow-button";
 
 export default function Page() {
@@ -7,7 +8,7 @@ export default function Page() {
         Workflows
         <WorkflowButton />
       </h1>
-      {/* <Workflows /> */}
+      <Workflows />
     </div>
   );
 }

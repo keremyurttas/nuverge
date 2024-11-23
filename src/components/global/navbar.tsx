@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <nav className="bg-white dark:bg-secondary fixed w-full z-20 top-0 start-0 border-b border-accent dark:border-accent">
+      <nav className="bg-white dark:bg-secondary fixed w-full z-[999] top-0 start-0 border-b border-accent dark:border-accent">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
