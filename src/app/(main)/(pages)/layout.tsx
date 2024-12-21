@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "@/components/global/sidebar";
 import InfoBar from "@/components/infobar";
+import {ClerkProvider} from "@clerk/nextjs"
 
 type Props = { children: React.ReactNode };
 

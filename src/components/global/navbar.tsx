@@ -1,6 +1,9 @@
+import { currentUser, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
-export default function Navbar() {
+export default async function Navbar() {
+  const user = await currentUser()
+
   return (
     <>
       <nav className="bg-white dark:bg-secondary fixed w-full z-[999] top-0 start-0 border-b border-accent dark:border-accent">
@@ -29,7 +32,9 @@ export default function Navbar() {
                   Get Started
                 </span>
               </Link>
+              {user ? <UserButton afterSignOutUrl="/" /> : null}
             </aside>
+           
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"

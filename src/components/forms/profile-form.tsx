@@ -15,19 +15,21 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Loader2 } from "lucide-react";
-type Props = {};
-
-export default function ProfileForm(props: Props) {
+type Props = {
+  user: any;
+  // onUpdate?: any;
+};
+export default function ProfileForm({ user }: Props) {
   const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof EditUserProfileSchema>>({
     mode: "onChange",
     resolver: zodResolver(EditUserProfileSchema),
     defaultValues: {
-      name: "",
-      email: "",
+      name: '',
+      email:'',
     },
   });
-
+console.log("user", user)
   return (
     <Form {...form}>
       <form className="flex flex-col gap-6" onSubmit={() => {}}>
